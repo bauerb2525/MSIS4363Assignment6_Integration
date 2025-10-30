@@ -1,29 +1,26 @@
-pipeline {
-
+pipeline{
   agent any
-
-  options { timestamps() }
- 
-  stages {
-
-    stage('Checkout') { steps { checkout scm } }
-
-    stage('Restore')  { steps { bat 'dotnet restore' } }
-
-    stage('Build')    { steps { bat 'dotnet build --configuration Release --no-restore' } }
-
-    stage('Test')     { steps { bat 'dotnet test --configuration Release --no-build --logger trx' } }
-
+  stages{
+    stage('Checkout Code'){
+      steps{
+        git 'https://github.com/bauerb2525/MSIS4363Assignment6_Integration'
+      }
+    }
+    stage('Build'){
+      steps{
+        sh 'echo "building the app"'
+      }
+    }
+    stage('Test'){
+      steps{
+        sh 'echo "Running Tests"'
+      }
+    }
+    stage('Deploy'){
+      steps{
+        sh 'echo "deploying"'
+      }
+    }
   }
- 
-  post {
-
-    success { echo '✅ Build succeeded!' }
-
-    failure { echo '❌ Build failed. Check logs.' }
-
-  }
-
 }
-
  

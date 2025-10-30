@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSIS4363Assignment6", "MSIS4363Assignment6\MSIS4363Assignment6.csproj", "{A2D55EF7-20C8-4BA5-AD34-11F5D3853BBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2D55EF7-20C8-4BA5-AD34-11F5D3853BBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2D55EF7-20C8-4BA5-AD34-11F5D3853BBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2D55EF7-20C8-4BA5-AD34-11F5D3853BBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2D55EF7-20C8-4BA5-AD34-11F5D3853BBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
